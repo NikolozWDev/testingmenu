@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    font-family: Arial;
+    padding: 0px 0px 500px 0px;
+}
+.primary-div {
+    background-color: #252B42;
+    padding: 0px 0px 150px 0px;
+}
+
+/* here is <Header> Styles */
+
+.header-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    padding: 20px;
+}
+
+.header-title {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.header-middle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-middle-text {
+    color: white;
+    font-size: 16px;
+}
+
+.header-right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right-b1 {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.header-right-b2 {
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 15px 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* end <Header> Styles */
+
+
+
+/* here is <middle-section-div> styles */
+
+.middle-section-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-section-leftside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 480px;
+}
+
+.middle-section-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.middle-section-text1 {
+    color: orange;
+    font-size: 16px;
+}
+
+.middle-section-text2 {
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.middle-section-text3 {
+    color: white;
+    font-size: 18px;
+}
+
+.middle-section-b1 {
+    background-color: orange;
+    border: none;
+    padding: 8px 15px 8px 15px;
+    color: white;
+    border-radius: 8px;
+}
+
+.middle-section-b2 {
+    border: 1px solid orange;
+    padding: 8px 15px 8px 15px;
+    color: white;
+    border-radius: 8px;
+    background-color: #252B42;
+}
+
+.middle-section-rightside {
+    border-radius: 50%;
+}
+
+/* end <middle-section-div> styles */
+
+
+@media(max-width: 1200px) {
+    .middle-section-rightside {
+        width: 500px;
+    }
+    .middle-section-text2 {
+        font-size: 40px;
+    }
+    .header-div {
+        gap: 215px;
+    }
+}
+@media(max-width: 1030px) {
+    .middle-section-div {
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 100px;
+    }
+    .header-div {
+        gap: 100px;
+    }
+}
+@media(max-width: 800px) {
+    .header-middle-section {
+        display: none;
+    }
+    .header-div {
+        gap: 190px;
+    }
+}
+@media(max-width: 550px) {
+    .header-div {
+        gap: 0px;
+        justify-content: space-between;
+    }
+    .middle-section-leftside {
+        width: 90%;
+    }
+    .middle-section-rightside {
+        width: 90%;
+    }
+}
